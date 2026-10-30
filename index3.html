@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global EV Manufacturing Analytics</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+
+        /* Top Header */
+        header {
+            background-color: #1a252f;
+            color: #ffffff;
+            text-align: center;
+            padding: 2.5rem 1rem 1.8rem 1rem;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            letter-spacing: 0.5px;
+        }
+
+        header p {
+            margin-top: 0.6rem;
+            color: #bdc3c7;
+            font-size: 1rem;
+        }
+
+        /* Dashboard Container */
+        .dashboard-container {
+            max-width: 1300px;
+            margin: 2rem auto;
+            padding: 1.5rem;
+            background: #ffffff;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+            border-radius: 8px;
+        }
+
+        .tableau-wrapper {
+            position: relative;
+            width: 100%;
+            overflow-x: auto;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 1.5rem 1rem;
+            background-color: #1a252f;
+            color: #ffffff;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Global EV Manufacturing Dashboard</h1>
+        <p>Interactive Data Visualization & Analytics</p>
+    </header>
+
+    <main class="dashboard-container">
+        <!-- Native Tableau Public Embed Frame -->
+        <div class="tableau-wrapper">
+            <div class='tableauPlaceholder' id='viz1730300000000' style='position: relative; width: 100%;'>
+                <noscript>
+                    <a href='#'>
+                        <img alt='Global EV Manufacturing' src='https://public.tableau.com/static/images/ev/evtabelu/GlobalEVManufacturing/1_rss.png' style='border: none' />
+                    </a>
+                </noscript>
+                <object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                    <param name='embed_code_version' value='3' /> 
+                    <param name='site_root' value='' />
+                    <param name='name' value='evtabelu&#47;GlobalEVManufacturing' />
+                    <param name='tabs' value='yes' />
+                    <param name='toolbar' value='yes' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='en-US' />
+                </object>
+            </div>
+        </div>
+        <script type='text/javascript'>
+            var divElement = document.getElementById('viz1730300000000');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            vizElement.style.width = '100%';
+            vizElement.style.height = '850px';
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 EV Analytics Project</p>
+    </footer>
+
+</body>
+</html>
